@@ -1,0 +1,8 @@
+import type {Medication} from '../shared/schema';
+import type {Language} from '../i18n/translations';
+export default function WebEvidence({medication:m,language}:{medication:Medication;language:Language}){
+ if(!m.web_status)return null;
+ const ur=language==='ur';
+ const labels={not_configured:ur?'ویب تلاش منسلک نہیں؛ مقامی فہرست استعمال ہوئی۔':'Web search is not connected. Catalog matching is available.',skipped:ur?'اس اندراج کے لیے اضافی ویب تلاش استعمال نہیں ہوئی۔':'Additional web search was not used for this entry.',unavailable:ur?'ویب ذرائع تک رسائی نہیں ہو سکی۔':'Web sources could not be reached.',quota:ur?'ویب تلاش کی حد پوری ہو گئی۔':'Web search reached its request or credit limit.',unmatched:ur?'منتخب ذرائع میں نتیجہ نہیں ملا۔':'No results found in the selected sources.',matched:ur?'ویب حوالہ جات ملے — اصل نسخے سے تصدیق کریں۔':'Web references found — compare with the original prescription.'};
+ return <div className="web-evidence"><p><b>{ur?'ویب حوالہ جات':'Web evidence'}</b></p><p>{labels[m.web_status]}</p>{m.web_evidence?.map((e,i)=><div className="web-source" key={i}><span className="source-kind">{e.source_type==='retailer'?(ur?'دکان کی فہرست — غیر مصدقہ':'Retail listing — unverified'):e.source_type==='regulator'?(ur?'ریگولیٹر کا صفحہ':'Regulator page'):ur?'کمپنی کا صفحہ':'Manufacturer page'}</span><a href={e.url} target="_blank" rel="noopener noreferrer">{e.title}</a><small>{new URL(e.url).hostname} · {e.retrieved_at.slice(0,10)}</small><p dir="auto">{e.excerpt}</p></div>)}{m.web_evidence?.length?<p className="muted">{ur?'یہ حوالہ جات نسخے کے نام یا خوراک کی تصدیق نہیں کرتے۔':'Search results are reference leads, not a confirmed medicine identity or prescribed instruction.'}</p>:null}</div>;
+}

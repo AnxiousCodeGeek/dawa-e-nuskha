@@ -1,0 +1,77 @@
+/* Abstract light fields keep the working surface calm and readable. */
+body {
+  background-color:#071427;
+  background-image:radial-gradient(ellipse at 90% 12%,#477e975c,transparent 38%),radial-gradient(ellipse at 28% 58%,#1665aa75,transparent 45%),radial-gradient(ellipse at 80% 95%,#647abf40,transparent 43%),linear-gradient(145deg,#060e1c,#0d263e 65%,#111c37);
+  background-attachment:fixed;
+}
+.site-header {background:#f6fbfff2;backdrop-filter:blur(18px);border-bottom-color:#ffffff60;}
+.sidebar {background:#071629b8;border-inline-end-color:#a8d5fa20;backdrop-filter:blur(20px);}
+.sidebar .nav-active {background:#3d76986b;box-shadow:inset 0 0 0 1px #81bada35;}
+.sidebar .nav-button:hover {background:#416d9752;}
+.main-content {padding-bottom:12px;}
+.breadcrumb,.assist-label,.stepper,.source-caption,.site-footer {color:#c5d8ea;}
+.step-active,.step-done {color:#a9e4ff;}
+.stepper>div:not(:last-child):after {background:#87b6d54f;}
+.welcome h1,.results-heading h1,.welcome-sub,.results-heading>div>p {color:#f2f8ff;}
+.welcome-description {color:#bed2e6;}
+.eyebrow {color:#9cd5ed;}
+.demo-heading {color:#eff8ff;}
+.sample-eyebrow {color:#bed4e9;}
+.upload-card {background:#f9fcfff5;border:1px solid #daeafb;box-shadow:0 16px 55px #010a1c30;}
+.photo-tips {background:#e8f5fff2;border-color:#cae2f5;box-shadow:0 14px 40px #010a1c24;}
+.panel,.med-card {box-shadow:0 14px 45px #010a1c1f;}
+.demo-card {border-color:#c6d6e4;box-shadow:0 8px 30px #020a1c20;}
+.privacy-strip {background:#eaf0fff2;border-color:#bfcfec;}
+.result-toolbar {background:#f5fafff2;padding:14px 18px;border:1px solid #c6d8ee;border-radius:14px;}
+.export-panel {background:#f6fafff2;}
+.safety-note {background:#edf5fff2;padding:17px;border-radius:12px;color:#223d5b;}
+.site-footer {border-top-color:#a8c9e62a;}
+.owner-page>.text-button {color:#d7edff;}
+.owner-panel .eyebrow {color:#2f67c6;}
+.catalog-candidates {margin:10px 0;padding-inline-start:21px;}
+.catalog-candidates li {margin:10px 0;}
+.catalog-candidates small {display:block;color:#60738f;font-size:.8rem;}
+.explanation a {color:#185abe;text-decoration:underline;text-underline-offset:3px;}
+.search-setup{margin-top:24px}.search-setup>svg{color:#136cfc}.search-setup h2{margin:12px 0 16px}.web-evidence{border-top:1px solid #d9e4f0;margin-top:16px;padding-top:14px}.web-source{background:#f2f7fc;border:1px solid #d6e2f0;border-radius:9px;padding:13px;margin:12px 0}.web-source a{display:block;font-weight:600;margin:7px 0}.web-source small{display:block;color:#516781;overflow-wrap:anywhere}.web-source p{font-size:.85rem;margin-top:8px}.source-kind{font-size:.8rem;font-weight:600;color:#3c5779}
+.history-page>h1{color:#f2f8ff;letter-spacing:-.04em}
+.history-page>p{color:#c5d8ea;line-height:1.8}
+.vault-panel{max-width:560px;border-radius:20px;padding:28px;border:1px solid #d8e7f6}
+.vault-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;background:#eaf2ff;color:#175ad4}
+.vault-panel h2{margin:18px 0 10px;font-size:1.25rem}
+.vault-panel p{font-size:1rem;line-height:1.7}
+.vault-panel .vault-guidance{margin-bottom:22px}
+.passphrase-note{display:flex;align-items:flex-start;gap:12px;background:#edf4ff;border:1px solid #d4e3fa;padding:16px;border-radius:12px;margin:8px 0 14px;color:#234466}
+.passphrase-note svg{flex-shrink:0;margin-top:3px}
+.passphrase-note p{font-size:1rem;line-height:1.65}
+.how-guide ol{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:12px}
+.guide-step{display:flex;align-items:flex-start;gap:16px;padding:20px;border:1px solid #d9e5f2;border-radius:14px;background:#f5f9ff}
+.guide-icon{flex-shrink:0;display:grid;place-items:center;width:48px;height:48px;background:#e3ecff;color:#215cd1;border-radius:14px}
+.guide-number{display:block;color:#48618a;font-size:.75rem;font-weight:700;letter-spacing:.09em;margin-bottom:5px}
+.guide-step h3{font-size:1.05rem;line-height:1.5;margin-bottom:6px}
+.guide-step p{font-size:1rem;color:#465c78;line-height:1.65}
+.guide-step-2{background:#f0faf9;border-color:#cfe6e3}.guide-step-2 .guide-icon{background:#daf0ed;color:#167769}
+.guide-step-3{background:#fffaf0;border-color:#eee0bf}.guide-step-3 .guide-icon{background:#f9edcc;color:#90681b}
+.guide-safety{display:flex;gap:10px;align-items:flex-start;color:#465c78;margin-top:18px;font-size:.9rem;line-height:1.65}
+.guide-safety svg{flex-shrink:0;margin-top:4px}
+html[lang=ur] body,html[lang=ur] button,html[lang=ur] input,html[lang=ur] select,[lang=ur]{font-family:'Noto Nastaliq Urdu',Arial,sans-serif;letter-spacing:normal}
+html[lang=ur] body{line-height:2.15}
+html[lang=ur] h1,html[lang=ur] h2,html[lang=ur] h3,html[lang=ur] [data-slot=dialog-title]{line-height:2;letter-spacing:normal}
+html[lang=ur] p,html[lang=ur] .guide-step p,html[lang=ur] [data-slot=dialog-description],html[lang=ur] .guide-safety,html[lang=ur] .passphrase-note p{line-height:2.2}
+html[lang=ur] .guide-number{letter-spacing:normal;line-height:2.2;font-size:.85rem}
+html[lang=ur] .nav-button,html[lang=ur] .primary,html[lang=ur] .secondary,html[lang=ur] .small-button{min-height:52px;line-height:2;padding-top:10px;padding-bottom:10px}
+html[lang=ur] .field-label,html[lang=ur] .app-dialog label{font-size:1rem;line-height:2.2}
+html[lang=ur] .site-header{height:auto;min-height:86px}
+html[lang=ur] .language{line-height:2.2}
+[data-contrast=high] .history-page>h1,[data-contrast=high] .history-page>p{color:#142c43}
+@media(max-width:640px){.guide-step{padding:16px;gap:12px}.guide-icon{width:40px;height:40px}.vault-panel{padding:22px}}
+[data-contrast=high] body {background:white;background-image:none;}
+[data-contrast=high] .welcome h1,[data-contrast=high] .results-heading h1,[data-contrast=high] .welcome-sub,[data-contrast=high] .welcome-description,[data-contrast=high] .breadcrumb,[data-contrast=high] .assist-label,[data-contrast=high] .stepper,[data-contrast=high] .step-active,[data-contrast=high] .step-done,[data-contrast=high] .demo-heading,[data-contrast=high] .source-caption,[data-contrast=high] .results-heading>div>p {color:#142c43;}
+[data-contrast=high] .eyebrow,[data-contrast=high] .sample-eyebrow {color:#214c7b;}
+@media(max-width:640px){body{background-attachment:scroll}.result-toolbar{padding:14px}.sidebar{background:#08182a}.main-content{padding-top:24px}}
+@media print {body{background:white!important}.safety-note{background:white}.welcome h1,.results-heading h1{color:black}}
+
+/* Keep the approved Nastaliq style, with a slightly smaller Urdu hero. */
+html[lang=ur] .welcome h1{font-size:calc(2.4rem - 2px);margin-block-start:2rem;padding-block-start:.4rem;line-height:2.25}
+html[lang=ur] .photo-tips h2{font-size:1rem;letter-spacing:normal}
+@media(max-width:900px){html[lang=ur] .welcome h1{font-size:calc(2.15rem - 2px)}}
+@media(max-width:640px){html[lang=ur] .welcome h1{font-size:calc(1.95rem - 2px)}}
