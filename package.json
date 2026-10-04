@@ -1,0 +1,19 @@
+{
+  "name": "dawa-e-nuskha",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace frontend",
+    "typecheck": "npm run typecheck --workspace frontend",
+    "test": "python -m pytest backend/tests -q"
+  },
+  "type": "module"
+}

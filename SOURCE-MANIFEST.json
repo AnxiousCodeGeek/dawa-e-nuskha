@@ -1,0 +1,25 @@
+{
+  "project": "Dawa-e-Nuskha",
+  "original_ui_source_commit": "cead72b7f20bdcb1ddbb51f1a790d7cc7aa15497",
+  "export_date": "2026-10-04",
+  "edition": "python-fastapi-nextjs",
+  "backend_language": "Python",
+  "decorator": "backend.tool.tool",
+  "empty_env": "backend/.env",
+  "credentials_included": false,
+  "checks": {
+    "python_tests": 91,
+    "typecheck": "passed",
+    "production_build": "passed",
+    "two_server_smoke": "passed",
+    "pip_check": "passed"
+  },
+  "note": "Python backend port; no changes to the published website.",
+  "changes": [
+    "Aligned guidance/sample layout and responsive footer",
+    "Bounded transient Gemini retries",
+    "Distinct network, TLS and proxy failures",
+    "Redacted stage/status/attempt diagnostics",
+    "No-image Gemini connection probe"
+  ]
+}
