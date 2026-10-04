@@ -1,0 +1,24 @@
+# API keys
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Logs and editor files
+*.log
+.vscode/
+.idea/
+.DS_Store
