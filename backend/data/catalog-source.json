@@ -1,0 +1,9 @@
+{
+  "filename": "Pakistan_medicines.csv",
+  "sha256": "abea937f569ee127205c991c056d61d17ac25dd738c7538b6981b88bb983700f",
+  "imported_at": "2026-10-02",
+  "rows": 19060,
+  "origin": "User-supplied CSV with Dawaai product links",
+  "review_status": "unverified_retail_dataset",
+  "notice": "No generic ingredient mappings inferred. Prices excluded. Source licensing and product currency require review."
+}
